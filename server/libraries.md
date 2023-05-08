@@ -2,3 +2,5 @@ express
 dotenv
 mongoose
 nodemon
+nodemailer
+twilio
