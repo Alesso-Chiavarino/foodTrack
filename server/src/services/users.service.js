@@ -1,5 +1,5 @@
 import { getDAOS } from "../models/daos/index.js";
-import { HttpError, HTTP_STATUS } from "../utils/HttpError.js";
+import { HttpError, HTTP_STATUS } from "../utils/api.utils.js";
 
 const { usersDAO } = getDAOS()
 

@@ -1,9 +1,9 @@
 import { getDAOS } from "../models/daos/index.js";
-import { HttpError, HTTP_STATUS } from "../utils/HttpError.js";
+import { HttpError, HTTP_STATUS } from "../utils/api.utils.js";
 
 const { usersDAO, bussinessesDAO, ordersDAO, productsDAO } = getDAOS()
 
-export class UsersService {
+export class OrdersService {
 
     async getOrders() {
         const orders = await ordersDAO.getOrders()

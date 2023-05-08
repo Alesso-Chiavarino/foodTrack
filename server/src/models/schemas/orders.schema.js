@@ -1,4 +1,4 @@
-import { Schema, Model } from "mongoose";
+import { Schema, model } from "mongoose";
 
 const collection = 'orders'
 const schema = new Schema({
@@ -33,5 +33,5 @@ const schema = new Schema({
     },
 })
 
-const OrdersModel = new Model(collection, schema)
+const OrdersModel = new model(collection, schema)
 export default OrdersModel

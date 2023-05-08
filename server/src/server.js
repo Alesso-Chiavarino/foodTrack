@@ -3,6 +3,7 @@ import mongoose from 'mongoose'
 import ENV from './config/env.config.js'
 import { logError, logInfo, logSuccess } from './utils/console.utils.js'
 import appRouter from './routers/app.routers.js'
+import errorHandler from './middleware/error.middleware.js'
 
 const app = express()
 
@@ -10,6 +11,7 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use('/api', appRouter)
+app.use(errorHandler)
 
 //Routes
 app.get('/', (req, res) => {

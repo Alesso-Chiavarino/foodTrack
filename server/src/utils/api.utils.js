@@ -24,7 +24,7 @@ export const errorResponse = (description, error = null) => {
 export class HttpError {
     constructor(description, status = 500, details = null){
         this.description = description
-        this.status = status
+        this.statusNumber = status
         this.details = details
     }
 }
