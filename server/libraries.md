@@ -4,3 +4,4 @@ mongoose
 nodemon
 nodemailer
 twilio
+@faker-js/faker --save-dev
